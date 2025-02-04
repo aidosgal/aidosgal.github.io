@@ -10,9 +10,13 @@ async function loadPage(page) {
 }
 
 function navigateTo(route) {
-    history.pushState({}, "", route);
+    location.hash = route;
     loadPage(route);
 }
+
+window.addEventListener("hashchange", () => {
+    loadPage(location.hash.replace("#", "") || "/home");
+});
 
 window.addEventListener("popstate", () => {
     loadPage(location.pathname);
