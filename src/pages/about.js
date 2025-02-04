@@ -1,3 +1,10 @@
+import Layout from "../layout/layout.js";
+
 export default function() {
-    return `<h1>About Page</h1><p>This is the about page.</p>`;
+  const content = `
+      <h1>Home Page</h1>
+      <p>Welcome to the Home Page!</p>
+  `;
+
+  return Layout(content);
 }

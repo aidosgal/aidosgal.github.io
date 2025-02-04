@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>About</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script defer src="src/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +13,10 @@
 </head>
 <body class="bg-[#111111]">
     <div id="app"></div>
+
     <script type="module">
-        import loadHome from "./src/pages/home.js";
-        document.getElementById("app").innerHTML = loadHome();
+        import loadAbout from "./src/pages/about.js";
+        document.getElementById("app").innerHTML = loadAbout();
     </script>
 </body>
 </html>
-
