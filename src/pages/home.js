@@ -29,7 +29,7 @@ export default function () {
           где требовалась настройка обратного прокси для обеспечения стабильной и 
           высокоскоростной связи между клиентами и сервером.
         </p>
-        <div class="flex-wrap mt-4">
+        <div class="flex flex-wrap mt-4 gap-2">
           <div class="py-1 px-3 rounded bg-[#181d24] text-gray-400 inline-block">
               go
           </div>
