@@ -1,4 +1,5 @@
 import Work from './../components/work.js';
+import Project from './../components/project.js';
 
 export default function AnimatedText() {
   const targetText = "айдос галимжан";
@@ -8,6 +9,7 @@ export default function AnimatedText() {
   let isRandomizing = false;
 
   var work_exp = Work();
+  var projects = Project();
 
   const getTemplate = (text) => `
     <div class="mt-10">
@@ -21,8 +23,10 @@ export default function AnimatedText() {
         собираю пазлы.
       </p>
       <div class="mt-10 text-2xl"><span class="text-red-400">*</span> работа</div>
-        ${work_exp}
-      </div>
+      ${work_exp}
+      <div class="mt-10 text-2xl"><span class="text-red-400">*</span> проекты</div>
+      ${projects}
+    </div>
   `;
 
   function animateText(element) {
@@ -50,6 +54,6 @@ export default function AnimatedText() {
 
   return {
     initialHTML: getTemplate(currentText),
-    startAnimation: (element) => setTimeout(() => animateText(element), 500)
+    startAnimation: (element) => setTimeout(() => animateText(element), 200)
   };
 }
