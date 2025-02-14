@@ -26,6 +26,13 @@ export default function AnimatedText() {
       ${work_exp}
       <div class="mt-10 text-2xl"><span class="text-red-400">*</span> проекты</div>
       ${projects}
+      <div class="mt-10 text-2xl"><span class="text-red-400">*</span> ссылки</div>
+      <div class="flex gap-10 mb-10 mt-5">
+        <a href="https://www.instagram.com/bizzarchik/" class="text-gray-400 hover:text-red-400 duration-150">instagram</a>
+        <a href="https://github.com/aidosgal" class="text-gray-400 hover:text-red-400 duration-150">github</a>
+        <a href="https://wa.me/77053081659" class="text-gray-400 hover:text-red-400 duration-150">whatsapp</a>
+        <a href="https://t.me/bizzarchik" class="text-gray-400 hover:text-red-400 duration-150">telegram</a>
+      </div>
     </div>
   `;
 
